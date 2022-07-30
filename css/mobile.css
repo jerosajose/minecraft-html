@@ -1,0 +1,39 @@
+@media screen and (max-width: 1000px) {
+    .mainmenubody {
+        background-size: 100px !important;
+        background-repeat: repeat !important;
+        background-attachment: fixed !important;
+        animation: none !important;
+        background-image: url('../assets/dirt.jpg') !important;
+        width: 100vw !important;
+    }
+    .mcm-titlebar {
+        width: 20% !important;
+    }
+    .mc-menu center {
+        width: 100% !important;
+    }
+    .mc-menu .gametitle {
+        height: 60px;
+        transform: translate(110px, 0);
+    }
+    .mc-menu .yellow {
+        animation: none !important;
+        display: none !important;
+    }
+    .mc-btn {
+        margin: 10px 0 !important;
+        padding: 20px !important;
+        width: 110%;
+    }
+    .mc-mcopy {
+        position: static !important;
+        margin-left: 80px;
+    }
+    .hc {
+        width: 122% !important;
+    }
+    .shots {
+        height: 25vh !important;
+    }
+}

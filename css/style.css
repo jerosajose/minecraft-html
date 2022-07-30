@@ -1,0 +1,313 @@
+@import url('mobile.css');
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../fonts/Minecraft-font.otf');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('../fonts/Acumin.otf');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src: url('../fonts/Acumin-Bold.otf');
+}
+
+@media only screen and (max-width: 1000px) {
+    .content{margin: 10% 5% 10% 5% !important;}
+}
+
+:root {
+    --bg: #252525de;
+}
+
+.mc-title {
+    font-family: 'Minecraft';
+    font-size: 30px;
+    font-weight: normal !important;
+}
+
+h1 , h2 , h3 {
+    font-family: 'Bold';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Regular';
+}
+
+center {
+    text-align: center;
+}
+
+pre {
+    background-color: rgb(27, 27, 27);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+small {
+    font-size: xx-small;
+}
+
+.unused-content {
+    background-color: var(--bg);
+    color: white;
+    margin: 10% 20% 5% 20%;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.top-logo {
+    height: 250px;
+    margin-top: -200px;
+    transform: translateY(40px);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom , rgb(100, 100, 100) , rgb(70, 70, 70));
+    border-radius: 10px;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: inline;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 85, 4, 0.5);
+}
+
+p img {
+    border-radius: 15px;
+}
+
+.text-link {
+    color: #8787ff;
+    text-decoration: 1.5px underline dotted;
+    transition: 0.2s;
+}
+
+.text-link:hover {
+    color: #6f6fd2;
+}
+
+
+/* MC MENU  */
+
+.mainmenubody {
+    background-image: url('../assets/shots/mainbg.png');
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    animation: mmb-anim 90s ease infinite;
+}
+
+@keyframes mmb-anim {
+    0% {background-position-x: left;}
+    50% {background-position-x: right;}
+    100% {background-position-x: left;}
+}
+
+.mc-menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.mc-menu .gametitle {
+    pointer-events: none;
+    height: 100px;
+}
+
+.mc-menu:nth-child(2) {
+    display: initial !important;
+}
+
+.mc-menu .yellow {
+    font-family: 'Minecraft';
+    color: yellow;
+    text-shadow: 2px 2px 0 black;
+    font-size: 28px;
+    pointer-events: none;
+    transform: translate(330px, -5px) rotate(-20deg);
+    position: absolute;
+    animation: mcmy-anim 2.5s ease-in-out infinite;
+    will-change: contents;
+}
+
+@keyframes mcmy-anim {
+    0% {font-size: 28px;}
+    50% {font-size: 20px;}
+    100% {font-size: 28px;}
+}
+
+.mc-btn {
+    background-image: url('../assets/button-texture.png');
+    background-repeat: repeat-x;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    margin: 0% 35% 0.5% 35%;
+    border: black 3px solid;
+    font-family: 'Minecraft';
+    font-weight: lighter;
+    text-shadow: 1.5px 1.5px 0 black;
+    text-transform: uppercase;
+}
+
+.mc-btn:hover {
+    background-image: url('../assets/button-texture-hover.png');
+    color: #ffff9b;
+}
+
+.mc-menu img {
+    margin-right: -25px;
+    margin-bottom: 5%;
+}
+
+.mc-mcopy {
+    color: white;
+    opacity: 0.7;
+    font-family: 'Minecraft';
+    position: absolute;
+    bottom: 3px; left: 3px;
+    pointer-events: none;
+}
+
+.hc {
+    display: inline-flex;
+    padding: 0;
+    width: 30%;
+}
+
+.mc-half {
+    width: 100%;
+    margin: 0;
+}
+
+.mc-lonely {
+    background-image: url('../assets/button-texture.png');
+    background-repeat: repeat-x;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+    width: max-content;
+    border: black 3px solid;
+    font-family: 'Minecraft';
+    font-weight: lighter;
+    text-shadow: 1.5px 1.5px 0 black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mc-lonely:hover {
+    background-image: url('../assets/button-texture-hover.png');
+    color: #ffff9b;
+}
+
+/* MC SECONDARY MENUS */
+
+.mcsplashscreen {
+    background-image: url('../assets/dirt.jpg');
+    background-size: 100px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: 'Minecraft' !important;
+}
+
+.mcsplashscreen h1 {
+    font-family: 'Minecraft';
+    color: white;
+    font-weight: lighter;
+    text-shadow: 3px 3px 0 #555;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.mcsplashscreen .content {
+    background-image: linear-gradient(to bottom, #000000cb, #00000099, #00000093, #000000bc);
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    color: #ccc;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.mcsplashscreen strong {
+    color: white;
+}
+
+.mcsplashscreen p {
+    font-family: 'Minecraft';
+    font-weight: 100;
+    padding: 0 600px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .mcsplashscreen p {
+        padding: 0 100px;
+    }
+}
+
+.mcsplashscreen footer {
+    display: inline-flex;
+    padding: 0;
+    width: 30%;
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
+
+.mcsplashscreen footer a {
+    text-transform: none !important;
+}
+
+.mcsplashscreen label {
+    color: #aaa;
+    text-align: left !important;
+    width: 350px;
+    position: relative;
+    left: -145px;
+}
+
+.mcsplashscreen input {
+    border: 3px solid #bbb;
+    padding: 10px 15px 12px 15px;
+    margin: 5px 0;
+    background-color: black;
+    color: white;
+    font-family: 'Minecraft';
+    font-size: 16px;
+    width: 350px;
+}
+
+.shots {
+    height: 35vh;
+    display: inline-block;
+    pointer-events: none;
+    margin: 0;
+}

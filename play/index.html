@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!--
+Website by JerosGamer89
+Source code on github.com/Ascript89
+-->
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta property="og:site_name" content="YourMinecraftServerName">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="YourMinecraftServerName">
+    <meta property="og:description" content="Visit YourMinecraftServerName's server website for more information">
+    <meta id="meta-image" property="og:image" itemprop="image" content="../assets/cube.jpg">
+    <meta name="referrer" content="no-referrer">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="author" content="JerosGamer89">
+    <meta name="keywords" content="mcserver,jerosgamer89">
+    <meta name="description" content="YourMinecraftServerName website">
+    <meta name="viewport" content="width=device-width">
+    <title>Minecraft server</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/cube.jpg">
+</head>
+<body class="mcsplashscreen">
+    <h1>Start playing</h1>
+    <div class="content">
+        <p>
+            <label>Server IP</label><br>
+            <input value="mc.yourserver.ip" id="copyinput" readonly disabled>
+            <br><a class="mc-lonely" style="margin:0 49%;" onclick="copy()">Copy to clipboard</a>
+            <br>
+            <label style="left: -142px;">Game mode</label><br>
+            <input value="Forge + OptiFine (recommended)" id="copyinput" readonly disabled>
+            <br>
+            <label style="left: -110px;">Allowed versions</label><br>
+            <input value="1.16.x to 1.19.x" id="copyinput" readonly disabled>
+        </p>
+    </div>
+
+    <center><footer>
+        <a href="https://minecraft.net/" class="mc-btn mc-half">Buy game</a>
+        <a href="../" class="mc-btn mc-half">Done</a>
+    </footer></center>
+
+    <script>
+        function copy() {
+            var copyText = document.getElementById("copyinput");
+
+            copyText.select();
+            copyText.setSelectionRange(0, 99999);
+
+            navigator.clipboard.writeText(copyText.value);
+        }
+    </script>
+</body>
+</html>
