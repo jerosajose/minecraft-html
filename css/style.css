@@ -267,6 +267,10 @@ p img {
     padding: 0 600px;
 }
 
+.mcsplashscreen ul {
+    padding: 0 40%;
+}
+
 @media only screen and (max-width: 1400px) {
     .mcsplashscreen p {
         padding: 0 100px;
